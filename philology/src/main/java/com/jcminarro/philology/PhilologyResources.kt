@@ -52,9 +52,8 @@ internal class PhilologyResources(
 
     override fun getDisplayMetrics(): DisplayMetrics = baseResources.displayMetrics
 
-    override fun getDrawableForDensity(id: Int, density: Int): Drawable? {
-        return baseResources.getDrawableForDensity(id, density)
-    }
+    override fun getDrawableForDensity(id: Int, density: Int): Drawable? =
+        baseResources.getDrawableForDensity(id, density)
 
     @TargetApi(VERSION_CODES.LOLLIPOP)
     override fun getDrawableForDensity(id: Int, density: Int, theme: Theme?): Drawable? {
